@@ -28,5 +28,5 @@ numero_resultado = (digite_numero % 2)
 if numero_resultado == 0:
     print('Par')
 else:
-    print('Impar')
+    print('Ímpar')
 
