@@ -56,11 +56,11 @@
 # 
 # """
 # Exercicio 3
-cromossomo_variante = input('Digite o cromossomo: chr')
+cromossomo_variante = str('Digite o cromossomo: ')
 posicao_variante =  int(input('Digite a posição: '))
 genoma_referencia = str(input('Digite o genoma de referência: '))
 
-gene_brca1 = (str(f'chr{cromossomo_variante}') == str('chr17'))
+gene_brca1 = (str(cromossomo_variante) == str('chr17'))
 genoma_hg19 = (str(genoma_referencia) == str('hg19'))
 genoma_hg38 = (str(genoma_referencia) == str('hg38'))
 
