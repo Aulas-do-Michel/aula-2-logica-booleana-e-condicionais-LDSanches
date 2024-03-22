@@ -56,7 +56,7 @@
 # 
 # """
 # Exercicio 3
-cromossomo_variante = str('Digite o cromossomo: ')
+cromossomo_variante = str(input('Digite o cromossomo: '))
 posicao_variante =  int(input('Digite a posição: '))
 genoma_referencia = str(input('Digite o genoma de referência: '))
 
@@ -76,6 +76,7 @@ elif gene_brca1 == True and range_brca1_hg38 == True and genoma_hg38 == True:
 else:
     print('Resposta:')
     print('Não')
+
 
 else:
     print('Resposta:')
