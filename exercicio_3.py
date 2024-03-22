@@ -76,8 +76,3 @@ elif gene_brca1 == True and range_brca1_hg38 == True and genoma_hg38 == True:
 else:
     print('Resposta:')
     print('Não')
-
-
-else:
-    print('Resposta:')
-    print('Não')
