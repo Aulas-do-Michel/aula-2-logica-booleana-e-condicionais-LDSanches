@@ -39,10 +39,12 @@
 # """
 
 # Exercicio 2
-cromossomo_variante = input('Digite o cromossomo: chr')
+#cromossomo_variante = input('Digite o cromossomo: chr')
+cromossomo_variante = str(input('Digite o cromossomo: '))
 posicao_variante =  int(input('Digite a posição: '))
 
-gene_brca1 = (str(f'chr{cromossomo_variante}') == str('chr17'))
+#gene_brca1 = (str(f'chr{cromossomo_variante}') == str('chr17'))
+gene_brca1 = (str(cromossomo_variante) == str('chr17'))
 range_posicao = (posicao_variante >= 41196312 and posicao_variante <= 41277500)
 
 if gene_brca1 == True and range_posicao == True:
