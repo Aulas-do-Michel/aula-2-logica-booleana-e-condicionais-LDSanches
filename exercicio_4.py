@@ -57,21 +57,23 @@
 # Exercicio 4
 
 pais_destino = str(input('Qual país você vai viajar? '))
-total_reais = float(input('Quantos reais você quer converter? '))
 
 cotacao_dolar = float(5)
 cotacao_pesos = float(180)
 cotacao_ienes = float(30)
 
 if pais_destino == 'Estados Unidos':
+    total_reais = float(input('Quantos reais você quer converter? '))
     valor_total = (total_reais / cotacao_dolar)
     print('Resposta:')
     print(f"{valor_total:.2f} USD")
 elif pais_destino == 'Argentina':
+    total_reais = float(input('Quantos reais você quer converter? '))
     valor_total = (total_reais * cotacao_pesos)
     print('Resposta:')
     print(f"{valor_total:.2f} ARS")
 elif pais_destino == 'Japão':
+    total_reais = float(input('Quantos reais você quer converter? '))
     valor_total = (total_reais * cotacao_ienes)
     print('Resposta:')
     print(f"{valor_total:.2f} JPY")
