@@ -58,11 +58,11 @@
 # Exercicio 3
 cromossomo_variante = input('Digite o cromossomo: chr')
 posicao_variante =  int(input('Digite a posição: '))
-genoma_referencia = int(input('Digite o genoma de referência: hg'))
+genoma_referencia = str(input('Digite o genoma de referência: '))
 
 gene_brca1 = (str(f'chr{cromossomo_variante}') == str('chr17'))
-genoma_hg19 = (str(f'hg{genoma_referencia}') == str('hg19'))
-genoma_hg38 = (str(f'hg{genoma_referencia}') == str('hg38'))
+genoma_hg19 = (str(genoma_referencia) == str('hg19'))
+genoma_hg38 = (str(genoma_referencia) == str('hg38'))
 
 range_brca1_hg19 = (posicao_variante >= 41196312 and posicao_variante <= 41277500)
 range_brca1_hg38 = (posicao_variante >= 43044295 and posicao_variante <= 43125483)
@@ -73,6 +73,10 @@ if gene_brca1 == True and range_brca1_hg19 == True and genoma_hg19 == True:
 elif gene_brca1 == True and range_brca1_hg38 == True and genoma_hg38 == True:
     print('Resposta:')
     print('Sim')
+else:
+    print('Resposta:')
+    print('Não')
+
 else:
     print('Resposta:')
     print('Não')
