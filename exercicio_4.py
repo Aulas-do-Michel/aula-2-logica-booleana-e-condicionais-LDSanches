@@ -73,6 +73,6 @@ elif pais_destino == 'Argentina':
 elif pais_destino == 'Japão':
     total_reais = float(input('Quantos reais você quer converter? '))
     valor_total = (total_reais * cotacao_ienes)
-    print(f'Resposta:/n{valor_total:.2f} JPY')
+    print(f'Resposta:\n{valor_total:.2f} JPY')
 else:
-    print('Resposta:/nNão temos essa moeda em caixa.')
+    print('Resposta:\nNão temos essa moeda em caixa.')
