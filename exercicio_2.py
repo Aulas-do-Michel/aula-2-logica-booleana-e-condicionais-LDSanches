@@ -48,8 +48,6 @@ gene_brca1 = (str(cromossomo_variante) == str('chr17'))
 range_posicao = (posicao_variante >= 41196312 and posicao_variante <= 41277500)
 
 if gene_brca1 == True and range_posicao == True:
-    print('Resposta:')
-    print('Sim')
+    print('Resposta:\nSim')
 else:
-    print('Resposta:')
-    print('Não')
+    print('Resposta:\nNão')
