@@ -56,20 +56,32 @@
 # 
 # """
 # Exercicio 3
-cromossomo_variante = str(input('Digite o cromossomo: '))
-posicao_variante =  int(input('Digite a posição: '))
-genoma_referencia = str(input('Digite o genoma de referência: '))
+#cromossomo_variante = str(input('Digite o cromossomo: '))
+#posicao_variante =  int(input('Digite a posição: '))
+#genoma_referencia = str(input('Digite o genoma de referência: '))
 
-gene_brca1 = (str(cromossomo_variante) == str('chr17'))
-genoma_hg19 = (str(genoma_referencia) == str('hg19'))
-genoma_hg38 = (str(genoma_referencia) == str('hg38'))
+#gene_brca1 = (str(cromossomo_variante) == str('chr17'))
+#genoma_hg19 = (str(genoma_referencia) == str('hg19'))
+#genoma_hg38 = (str(genoma_referencia) == str('hg38'))
 
-range_brca1_hg19 = (posicao_variante >= 41196312 and posicao_variante <= 41277500)
-range_brca1_hg38 = (posicao_variante >= 43044295 and posicao_variante <= 43125483)
+#range_brca1_hg19 = (posicao_variante >= 41196312 and posicao_variante <= 41277500)
+#range_brca1_hg38 = (posicao_variante >= 43044295 and posicao_variante <= 43125483)
 
-if gene_brca1 == True and range_brca1_hg19 == True and genoma_hg19 == True:
-    print('Resposta:\nSim')
-elif gene_brca1 == True and range_brca1_hg38 == True and genoma_hg38 == True:
-    print('Resposta:\nSim')
+#if gene_brca1 == True and range_brca1_hg19 == True and genoma_hg19 == True:
+#    print('Resposta:\nSim')
+#elif gene_brca1 == True and range_brca1_hg38 == True and genoma_hg38 == True:
+#    print('Resposta:\nSim')
+#else:
+#    print('Resposta:\nNão')
+
+cromossomo = input( "Digite o cromossomo da variante (ex: chr17): ")
+posicao = int(input ("Digite a posição da variante: "))
+genoma_referencia = input("Digite o genoma de referência da variante (hg19 ou hg38): ")
+
+if cromossomo == "chr17":
+    if genoma_referencia == "hg19" and 41196312 <= posicao <= 41277500:
+        print ("Resposta:\nSim")
+    elif genoma_referencia == "hg38" and 43044295 <= posicao <= 43125483:
+        print( "Resposta:\nSim")
 else:
-    print('Resposta:\nNão')
+    print("Resposta:\nNão")
