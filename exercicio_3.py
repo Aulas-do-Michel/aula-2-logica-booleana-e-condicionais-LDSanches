@@ -68,11 +68,8 @@ range_brca1_hg19 = (posicao_variante >= 41196312 and posicao_variante <= 4127750
 range_brca1_hg38 = (posicao_variante >= 43044295 and posicao_variante <= 43125483)
 
 if gene_brca1 == True and range_brca1_hg19 == True and genoma_hg19 == True:
-    print('Resposta:')
-    print('Sim')
+    print('Resposta:\nSim')
 elif gene_brca1 == True and range_brca1_hg38 == True and genoma_hg38 == True:
-    print('Resposta:')
-    print('Sim')
+    print('Resposta:\nSim')
 else:
-    print('Resposta:')
-    print('Não')
+    print('Resposta:\nNão')
