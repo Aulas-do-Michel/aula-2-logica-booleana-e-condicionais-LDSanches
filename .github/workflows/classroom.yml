@@ -19,6 +19,7 @@ jobs:
       uses: education/autograding-io-grader@v1
       with:
         test-name: Exercício 1 - Teste 1
+        setup-command: ''
         command: python ./exercicio_1.py
         input: '100'
         expected-output: "\\b[Pp][Aa][Rr]\\b"
@@ -30,6 +31,7 @@ jobs:
       uses: education/autograding-io-grader@v1
       with:
         test-name: Exercício 1 - Teste 2
+        setup-command: ''
         command: python ./exercicio_1.py
         input: '111'
         expected-output: Ímpar
@@ -41,6 +43,7 @@ jobs:
       uses: education/autograding-io-grader@v1
       with:
         test-name: Exercício 2 - Teste 1
+        setup-command: ''
         command: python ./exercicio_2.py
         input: "chr1\r\n1"
         expected-output: Não
@@ -52,6 +55,7 @@ jobs:
       uses: education/autograding-io-grader@v1
       with:
         test-name: Exercício 3 - Teste 1
+        setup-command: ''
         command: echo "chr17\n43044295\nhg38" | python ./exercicio_3.py
         input: ''
         expected-output: Sim
@@ -63,6 +67,7 @@ jobs:
       uses: education/autograding-io-grader@v1
       with:
         test-name: Exercício 3 - Teste 2
+        setup-command: ''
         command: python exercicio_3.py
         input: "chr1\r\n1\r\nhg19"
         expected-output: Não
@@ -74,6 +79,7 @@ jobs:
       uses: education/autograding-io-grader@v1
       with:
         test-name: Exercício 4 - Teste 1
+        setup-command: ''
         command: echo "Estados Unidos\n100" | python exercicio_4.py
         input: ''
         expected-output: "\\b20(?:\\.\\d+)?\\s*USD\\b"
@@ -85,6 +91,7 @@ jobs:
       uses: education/autograding-io-grader@v1
       with:
         test-name: Exercício 4 - Teste 2
+        setup-command: ''
         command: echo "Japão\n1" | python ./exercicio_4.py
         input: ''
         expected-output: "\\b30(?:\\.\\d+)?\\s*JPY\\b"
@@ -96,6 +103,7 @@ jobs:
       uses: education/autograding-io-grader@v1
       with:
         test-name: Exercício 5 - Teste 1
+        setup-command: ''
         command: echo "6\nGJB2\nALTO\n100\n20" | python exercicio_5.py
         input: ''
         expected-output: É relevante
@@ -107,6 +115,7 @@ jobs:
       uses: education/autograding-io-grader@v1
       with:
         test-name: Exercício 5 - Teste 2
+        setup-command: ''
         command: echo "0\nBRCA2\nBAIXO\n100\n50" | python ./exercicio_5.py
         input: ''
         expected-output: Não
@@ -118,6 +127,7 @@ jobs:
       uses: education/autograding-io-grader@v1
       with:
         test-name: Exercício 2 - Teste 2
+        setup-command: ''
         command: echo "chr17\n41196312" | python exercicio_2.py
         input: ''
         expected-output: Sim
