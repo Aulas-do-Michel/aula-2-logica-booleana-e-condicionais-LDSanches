@@ -45,7 +45,9 @@ jobs:
         test-name: Exercício 2 - Teste 1
         setup-command: ''
         command: python ./exercicio_2.py
-        input: "chr1\r\n1"
+        input: |-
+          chr1
+          1
         expected-output: Não
         comparison-method: contains
         timeout: 10
@@ -69,7 +71,10 @@ jobs:
         test-name: Exercício 3 - Teste 2
         setup-command: ''
         command: python exercicio_3.py
-        input: "chr1\r\n1\r\nhg19"
+        input: |-
+          chr1
+          1
+          hg19
         expected-output: Não
         comparison-method: contains
         timeout: 10
